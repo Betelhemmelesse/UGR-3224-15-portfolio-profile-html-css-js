@@ -4,72 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Betelhem's digital showcase</title>
+    <link rel="stylesheet" href="css/aboutme.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <img
-                src="image/quino-al-BlMj6RYy3c0-unsplash.jpg"
-                width="50"
-                alt="profile picture"
-              />
-            </li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="project.html">Project</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header>
+      <nav>
+        <ul class="mobile-menu">
+          <li class="menu"><a href="home.html">Home</a></li>
+          <li class="menu"><a href="aboutme.html">About me</a></li>
+          <li class="menu"><a href="project.html">Project</a></li>
+          <li class="menu"><a href="blog.html">Blog</a></li>
+          <li class="menu"><a href="contactme.html">Contact me</a></li>
+        </ul>
+        <ul class="desktop-nav">
+          <li class="profile">
+            <img src="image/Ellipse 1 (1).png" alt="profile picture" />
+          </li>
+          <li class="desk"><a href="home.html">Home</a></li>
+          <li class="desk"><a href="aboutme.html">About me</a></li>
+          <li class="desk"><a href="project.html">Project</a></li>
+          <li class="desk"><a href="blog.html">Blog</a></li>
+          <li class="desk"><a href="contactme.html">Contact me</a></li>
+          <li class="menu menubar">
+            <img src="image/Menu.png" alt="menubar" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
       <section>
         <h4>Aboutme</h4>
-        <div>
-          <img src="image/photo_2024-11-24_21-40-32.jpg" alt="my photo" />
-        </div>
-        <div>
-          <p>
-            Hi there! I'm Betelhem Melesse third year software engineering
-            student at Addis Ababa university, Ethiopia.My portfolio showcases a
-            range of projects.I craft bespoke websites using the latest
-            technologies and design trends, including HTML5, CSS3, JavaScript,
-            Bootstrap.Let's connect and explore how we can bring your ideas to
-            life
-          </p>
-        </div>
-        <div>
-          <a href="cv/betelhem-melesse-(1).pdf"><button>CV</button></a>
-        </div>
-        <div>
-          <table>
-            <tr>
-              <td>PHYTON</td>
-              <td>HTML</td>
-            </tr>
-            <tr>
-              <td>JAVA</td>
-              <td>CSS</td>
-            </tr>
-            <tr>
-              <td>REACT</td>
-              <td>JAVASCRIPT</td>
-            </tr>
-          </table>
+        <div class="main-container">
+          <div class="photo column1"></div>
+          <div class="button column1">
+            <a
+              href="https://www.canva.com/design/DAGW7L8woLE/na7LqEeAzU63oLtLDpg8LA/edit?utm_content=DAGW7L8woLE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              ><button>CV</button></a
+            >
+          </div>
+          <div class="texts column2 same-height">
+            <p>
+              Hi there! I'm BetelhemMelesse, a third-year Software Engineering
+              student at Addis Ababa University, Ethiopia. My portfolio features
+              divers projects. I create custom website using HTML5, CSS3,
+              JavaScript, and Bootstrap.<span>
+                Let's connect and bring your ideas to life!</span
+              >
+            </p>
+          </div>
+
+          <div class="table excluded">
+            <table>
+              <tr>
+                <td class="c1">PHYTON</td>
+                <td class="c1">HTML</td>
+              </tr>
+              <tr>
+                <td class="c2">JAVA</td>
+                <td class="c2">CSS</td>
+              </tr>
+              <tr>
+                <td class="c3">REACT</td>
+                <td class="c3">JAVASCRIPT</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </section>
-      <footer>
-        <div>
-          <div>
-            <img src="image/icons8-copyright-96.png" alt="copyright icon" />
-          </div>
-          <div>
-            <p>2024, betelhemmelesse</p>
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer>
+      <div class="copy">
+        <img src="image/Copyright.png" alt="copyright icon" />
+      </div>
+      <div>
+        <p>2024,Betelhem Melesse.<span>All Rights Reserved.</span></p>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
   </body>
 </html>

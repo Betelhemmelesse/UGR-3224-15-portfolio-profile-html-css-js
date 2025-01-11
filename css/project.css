@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+   
+}
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    /* Adjust z-index as needed */
+    z-index: 999; 
+  }
+img{
+    max-width: 100%;
+}
+body{
+    background-color:#FFF5EF;
+    opacity: 90%;
+    padding-top: 150px;
+}
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #F7C9B0;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+}
+nav{
+    padding:0 24px;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+}
+nav li{
+    height: 56px;
+    margin-top: 24px;
+    line-height: 140px;
+}
+nav li a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color:#1C0A00;
+    font-size: 33px;
+    line-height: 140%;
+    font-weight: bold;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.desktop-nav .menu {
+    height: 90px;
+    width: 90px;
+    margin-top: 20px;
+}
+.desktop-nav .profile {
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+}
+nav a:hover{
+    color: #E65100;
+}
+nav a.active {
+    color: #E65100;
+}
+.mobile-menu{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    height: 341px;
+    width: 220px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateX(0);
+}
+.mobile-menu li{
+    width: 100%;
+    height: 65px;
+    background-color: #F7C9B0;
+    padding: 20px 0;
+    margin: 4px;
+    border-radius: 5px;
+}
+footer{
+    width: 100%;
+    height: 129px;
+    background-color: #F7C9B0;
+    color: #240D00;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #F7C9B0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p {
+    text-align: center;
+}
+article:hover {
+    transform: scale(1.1); /* Increase size on hover */
+  }
+/*for mobile portrate*/
+.desk{
+    display: none;
+}
+.main-container {
+    margin: 32px 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main-container  article {
+    width: 330px;
+    height: 280px;
+    border-radius: 15px;
+    background-color: #FEFEFE;
+    margin: 0 auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); 
+}
+.main-container article img {
+    width: 330px;
+    height: 190px;
+    border-radius: 15px 15px 0 0; 
+}
+.main-container article p {
+    font-size: 23px;
+    font-weight: bold;
+    color: #2D1000;
+    text-align: center;
+    margin-top: 20px;
+} 
+h4 {
+    font-size: 13px;
+    color: #F4AF8A;
+    opacity: 80%;
+    margin: 10px 15px;
+    font-weight: lighter;
+}
+span {
+    display: none;
+}
+footer img{
+    width: 55px;
+    height: 65px;
+}
+
+/*for tablet portrate*/
+@media (min-width:700px) {
+    .main-container{
+        margin: 48px 64px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto); 
+        grid-gap: 50px;
+    
+    }
+    .main-container  article {
+        width: 300px;
+        height: 250px;
+        border-radius: 15px;
+        background-color: #FEFEFE;
+    }
+    .main-container article img {
+        width: 300px;
+        height: 160px; 
+    }
+    .main-container article p {
+        margin-top: 12px;
+    } 
+    span {
+        display:inline;
+    }
+    footer p{
+        font-size: 33px;
+    }
+    footer img{
+        width: 66px;
+        height: 80px;
+    }
+}
+
+/*for mobile landscape*/
+@media (min-width:900px) {
+    .main-container{
+        margin: 32px 12px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto); 
+        grid-gap: 16px;
+    }
+
+}
+
+/*for tablet landscape*/
+@media (min-width:1000px) {
+    .main-container{
+        margin: 16px;
+        row-gap: 16px; 
+        column-gap: 38px;
+    }
+    .desk{
+        display: block;
+    }
+    .desktop-nav .menu {
+        display: none;
+    }
+}
+/*for tablet landscape*/
+@media (min-width:1200px) {
+    .main-container  article {
+        width: 330px;
+        height: 280px;
+    }
+    .main-container article img {
+        width: 330px;
+        height: 190px; 
+    }
+    .main-container{
+        margin: 32px 64px ;
+        row-gap: 75px; 
+        column-gap: 100px;
+    }
+}
+
