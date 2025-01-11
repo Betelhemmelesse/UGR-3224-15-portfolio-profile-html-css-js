@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+   
+}
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    /* Adjust z-index as needed */
+    z-index: 999; 
+  }
+img{
+    max-width: 100%;
+}
+body{
+    background-color:#FFF5EF;
+    opacity: 90%;
+    padding-top: 130px;
+}
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #F7C9B0;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+}
+nav{
+    padding:0 24px;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+}
+nav li{
+    height: 56px;
+    margin-top: 24px;
+    line-height: 140px;
+}
+nav li a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color:#1C0A00;
+    font-size: 33px;
+    line-height: 140%;
+    font-weight: bold;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.desktop-nav .menu {
+    height: 90px;
+    width: 90px;
+    margin-top: 20px;
+}
+.desktop-nav .profile {
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+}
+nav a:hover{
+    color: #E65100;
+}
+nav a.active {
+    color: #E65100;
+}
+.mobile-menu{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    height: 341px;
+    width: 220px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateX(0);
+}
+.mobile-menu li{
+    width: 100%;
+    height: 65px;
+    background-color: #F7C9B0;
+    padding: 20px 0;
+    margin: 4px;
+    border-radius: 5px;
+}
+footer{
+    width: 100%;
+    height: 129px;
+    background-color: #F7C9B0;
+    color: #240D00;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #F7C9B0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p {
+    text-align: center;
+}
+
+/*for mobile portrate*/
+.main-container{
+    margin: 0 24px 24px 24px;
+}
+.desk{
+    display: none;
+}
+.vedios {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+    margin-bottom: 24px;
+  }
+  
+  .vedios video {
+    height: 280px;
+    width: 335px;
+    border-radius: 5px; 
+    margin: 0 auto;
+}
+.texts p {
+    color: #612200;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+audio {
+    background-color: #FDEEE6;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: block; 
+    margin: 0 auto; 
+}
+h4 {
+    font-size: 13px;
+    color: #F4AF8A;
+    opacity: 80%;
+    margin: 10px 15px;
+    font-weight: lighter;
+}
+span {
+    display: none;
+}
+footer img{
+    width: 55px;
+    height: 65px;
+}
+
+/*for tablet portrate*/
+@media (min-width:700px) {
+    .texts p {
+        font-size: 33px;
+        margin-bottom: 30px;
+    }
+    .vedios {
+        display: grid;
+        grid-template-rows: auto; /* Allow rows to automatically size based on content */
+        grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+        grid-gap: 48px; 
+        margin-bottom: 26px;
+      }
+      
+    span {
+        display:inline;
+    }
+    footer p{
+        font-size: 33px;
+    }
+    footer img{
+        width: 66px;
+        height: 80px;
+    }
+}
+    /*for mobile landscape*/
+@media (min-width:956px) {
+    .vedios {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: -64px 16px 48px 0;
+      }
+      .vedios video {
+        height: 300px;
+        width: 250px;
+        margin-right: 16px;
+    }
+    .aud-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 75px;
+    }
+}
+
+/*for tablet landscape*/
+@media (min-width:1000px) {
+    .desk{
+        display: block;
+    }
+    .desktop-nav .menu {
+        display: none;
+    }
+    .aud-text {
+        display:block;
+        margin: 0 32px;
+    }
+    .vedios{
+        margin: 0 64px;
+        margin-bottom: 32px;
+    }
+}
+
+/*for desktop*/
+@media (min-width:1200px) {
+    .vedios video {
+        height: 280px;
+        width: 335px;
+    }
+    .texts {
+        margin-bottom: 64px;
+    }
+    .main-container {
+        margin: 0 32px 32px;
+    }
+}

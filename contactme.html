@@ -4,72 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Betelhem's digital showcase</title>
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <nav>
-          <ul>
-            <li><img src="image/photo_2024-11-24_21-40-32.jpg" alt="" /></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="project.html">Project</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section>
-        <h4>Contact Me</h4>
-        <section>
-          <div>
-            <h6>email address</h6>
-            <h5>betelhemmelesse@gmail.com</h5>
-            <h6>phone number</h6>
-            <h5>+251913816595</h5>
-          </div>
-          <div>
-            <a href="https://t.me/Bethy13"
-              ><img src="image/icons8-telegram-logo-48.png" alt="telegram icon"
-            /></a>
-            <a
-              href="https://myaccount.google.com/?hl=en_GB&utm_source=OGB&utm_medium=act&gar=WzEyMF0"
-              ><img src="image/icons8-gmail-logo-48.png" alt="email icon"
-            /></a>
-            <a href=""
-              ><img
-                src="image/icons8-instagram-logo-48.png"
-                alt="instagram icon"
-            /></a>
-          </div>
-        </section>
-        <div>
+    <header>
+      <nav>
+        <ul class="mobile-menu">
+          <li class="menu"><a href="home.html">Home</a></li>
+          <li class="menu"><a href="aboutme.html">About me</a></li>
+          <li class="menu"><a href="project.html">Project</a></li>
+          <li class="menu"><a href="blog.html">Blog</a></li>
+          <li class="menu"><a href="contactme.html">Contact me</a></li>
+        </ul>
+        <ul class="desktop-nav">
+          <li class="profile">
+            <img src="image/Ellipse 1 (1).png" alt="profile picture" />
+          </li>
+          <li class="desk"><a href="home.html">Home</a></li>
+          <li class="desk"><a href="aboutme.html">About me</a></li>
+          <li class="desk"><a href="project.html">Project</a></li>
+          <li class="desk"><a href="blog.html">Blog</a></li>
+          <li class="desk"><a href="contactme.html">Contact me</a></li>
+          <li class="menu menubar">
+            <img src="image/Menu.png" alt="menubar" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h4>Contact Me</h4>
+      <section class="main-container">
+        <div class="form-ee">
           <div>
             <form action="https://formspree.io/f/mldewwob" method="post">
-              <input type="text" name="name" placeholder="Name" />
-              <input type="email" name="email" placeholder="Email" /><br />
-              <input type="text" name="text" placeholder="subject" /><br />
+              <h5>Full Name <span>Email</span></h5>
+              <input class="name" type="text" name="name" placeholder="Name" />
+
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              /><br />
+              <label for="subjective">Subject</label>
+              <input
+                id="subjective"
+                class="subject"
+                type="text"
+                name="text"
+                placeholder="subject"
+              /><br />
+              <label for="text-area">Your Text</label>
               <textarea
+                class="textarea"
                 name="your message"
                 id="text-area"
                 cols="30"
                 rows="10"
+                placeholder="Your Message"
               ></textarea>
-              <button type="submit">send message</button>
+              <button class="button" type="submit">send message</button>
             </form>
           </div>
         </div>
-      </section>
-      <footer>
-        <div>
-          <div>
-            <img src="image/icons8-copyright-96.png" alt="copyright icon" />
+        <div class="texts">
+          <div class="texxx">
+            <div class="flexed-text ft1">
+              <h6>email address</h6>
+              <h5>betelhemmelesse@gmail.com</h5>
+            </div>
+            <div class="flexed-text phone">
+              <h6>phone number</h6>
+              <h5>+251913816595</h5>
+            </div>
           </div>
-          <div>
-            <p>2024, betelhemmelesse</p>
+          <div class="icons">
+            <div>
+              <a href="https://t.me/Bethy13"
+                ><img src="image/Vector.png" alt="telegram icon"
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://myaccount.google.com/?hl=en_GB&utm_source=OGB&utm_medium=act&gar=WzEyMF0"
+                ><img src="image/Gmail.png" alt="email icon"
+              /></a>
+            </div>
+            <div>
+              <a href=""
+                ><img src="image/Instagram.png" alt="instagram icon"
+              /></a>
+            </div>
           </div>
         </div>
-      </footer>
+      </section>
     </main>
+    <footer>
+      <div class="copy">
+        <img src="image/Copyright.png" alt="copyright icon" />
+      </div>
+      <div>
+        <p>2024,Betelhem Melesse.<span>All Rights Reserved.</span></p>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
   </body>
 </html>
